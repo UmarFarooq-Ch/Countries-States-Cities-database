@@ -1,21 +1,12 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8 */;
 
-CREATE TABLE IF NOT EXISTS `states` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(30) NOT NULL,
-  `country_id` int(11) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4121 ;
+ TRUNCATE Table "State";
 
-
-
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+INSERT INTO "State" ("id", "name", "country_id") VALUES
 (1, 'Andaman and Nicobar Islands', 101),
 (2, 'Andhra Pradesh', 101),
 (3, 'Arunachal Pradesh', 101),
@@ -2187,8 +2178,7 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
 (2178, 'Nimba', 123),
 (2179, 'Rivercess', 123),
 (2180, 'Sinoe', 123),
-(2181, 'Ajdabiya', 124);
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+(2181, 'Ajdabiya', 124),
 (2182, 'Fezzan', 124),
 (2183, 'Banghazi', 124),
 (2184, 'Darnah', 124),
